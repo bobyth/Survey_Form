@@ -1,0 +1,191 @@
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+</head>
+
+<body>
+<div class="jumbotron center text-center">
+    <h1 id="title">Bochum Survey Form</h1>
+
+    <p id="description">Love living in Bochum, but can't quite explain why?
+        <br>Take our short survey and extol the virtues of your neighbourhood.</p>
+</div>
+<!--container-->
+<div class="container">
+<div class="md-col-6">
+    <form id="survey-form">
+        <div class="form-row">
+            <div class="form-group col-md-6" >
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email" id="email-label">Email Adress</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="number" id="number-label">phone no</label>
+                <input type="number" class="form-control" id="number" placeholder="0234" min="5" max="110">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" min="5" max="110">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Which district of Bochum do you live in?</label>
+
+
+                <select id="dropdown" name="select" class="custom-select">
+                    <option value="Bochum-Mitte">Bochum-Mitte</option>
+                    <option value="Bochum-Wattenscheid">Bochum-Wattenscheid</option>
+                    <option value="Bochum-Nord">Bochum-Nord</option>
+                    <option value="Bochum-ost">Bochum-ost</option>
+                    <option value="Bochum-Sud">Bochum-Süd</option>
+                    <option value="Bochum-Sudwest">Bochum-Südwest</option>
+                </select>
+
+            </div>
+        </div>
+
+        <!--radio-box-->
+        <p>What's the worst thing about your district?</p>
+        <div class="form-row">
+
+            <div class="form-group col-md-2">
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" name="worst-thing" value="Rents">
+            <label class="custom-control-label" for="customRadio1">Rents</label>
+        </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="value" name="customRadio" class="custom-control-input" name="worst-thing" value="Pollution">
+                    <label class="custom-control-label" for="customRadio1">Pollution</label>
+                </div>
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="value2" name="customRadio" class="custom-control-input" name="worst-thing" value="Noise">
+                    <label class="custom-control-label" for="customRadio1">Noise</label>
+                </div>
+            </div>
+
+            <div class="form-group col-md-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" name="worst-thing" value="Noise">
+                    <label class="custom-control-label" for="customRadio1">Neighbours</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="value3" name="customRadio" class="custom-control-input" name="worst-thing" value="Not-well-connected">
+                    <label class="custom-control-label" for="customRadio1">Not well-connected</label>
+                </div>
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="value4" name="customRadio" class="custom-control-input" name="worst-thing" value="not-enough-shops">
+                    <label class="custom-control-label" for="customRadio1">Not enough shops</label>
+                </div>
+            </div>
+        </div>
+        <!--end-radio-box-->
+
+        <!--Checkbox-->
+        <p>Which of the following does you district have to offer?</p>
+        <div class="form-row">
+
+            <div class="form-group col-md-2">
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" value="cafes">
+                    <label class="custom-control-label" for="customCheck1">Cafes</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" value="transport">
+                    <label class="custom-control-label" for="customCheck2">Transport</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck3" value="parks">
+                    <label class="custom-control-label" for="customCheck3">Parks</label>
+                </div>
+            </div>
+            <div class="form-group col-md-2">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4" value="schools">
+                    <label class="custom-control-label" for="customCheck4">Schools</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5" value="restaurants">
+                    <label class="custom-control-label" for="customCheck5">Restaurants</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck6" value="nightlife">
+                    <label class="custom-control-label" for="customCheck6">Night life</label>
+                </div>
+            </div>
+        </div>
+
+        <!--end Checkbox -->
+
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+
+
+
+            <label for="Textarea1">Additional Comments</label>
+            <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+
+            </div>
+        </div>
+
+
+        <br>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+        <!--end form -->
+    </form>
+    <!--end container -->
+</div>
+
+
+</div>
+
+
+
+<div class="footer">
+    <div class="contact">
+
+        <a href="https://codepen.io/bobyth" target="_blank">
+            <span class="icon"><i class="fa fa-codepen"></i></span></a>
+        <a href="https://www.freecodecamp.org/bobyth" target="_blank">
+            <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+    </div>
+    <p>&copy 2018 Boby</a>
+    </p>
+</div>
+
+</body>
